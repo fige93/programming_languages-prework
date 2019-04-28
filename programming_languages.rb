@@ -5,12 +5,12 @@ def reformat_languages(languages)
   languages.each do |style, language|
     language.each do |name, attributes|
     new_hash[name] = attributes
-    binding.pry
     if name == :javascript && style == :functional
     else
       new_hash[name][:style] = []
     end
     new_hash[name][:style] << style
+    binding.pry
     end
   end
   new_hash
