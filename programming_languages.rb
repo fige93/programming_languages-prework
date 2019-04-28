@@ -7,6 +7,7 @@ def reformat_languages(languages)
     new_hash[name] = attributes
     binding.pry
     if name == :javascript && style == :functional
+    
     else
       new_hash[name][:style] = []
     end
